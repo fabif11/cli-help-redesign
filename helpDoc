@@ -1,0 +1,55 @@
+Usage:
+	program + command + option + argument
+	program + n*argument
+	program + optional argument
+	…
+
+Options:
+SYSTEM
+    -h --help   
+    -clr {True, False}, --clear_terminal {True, False}
+    -f FILE, --file FILE
+    -p PATH, --path PATH    
+SPACE
+    -col COLUMNS [COLUMNS ...], --columns COLUMNS [COLUMNS ...]
+    -d DELIMITER, --delimiter DELIMITER
+LOOK
+    -m MARKER, --marker MARKER 
+    -t TITLE, --title TITLE    
+    -xl XLABEL, --xlabel XLABEL    
+    -yl YLABEL, --ylabel YLABEL    
+    -c COLOR, --color COLOR
+    -g {True,False}, --grid {True,False}
+STATUS
+    -s SLEEP, --sleep SLEEP
+
+    
+
+Options(-o, --option ARG): 
+
+SYSTEM
+    -h --help  
+    -clr, --clear_terminal {True, False} 
+    -p, --path PATH    
+TEXT
+    -t, --title TITLE    
+    -xl, --xlabel XLABEL    
+    -yl, --ylabel YLABEL    
+LOOK
+    -c, --color COLOR     
+    -m, --marker MARKER      
+STATUS
+    -s, --sleep SLEEP
+
+
+Options:
+Beginner          Expert
+--                -
+help              h
+path PATH         p PATH
+title TITLE       t TITLE
+xlabel XLABEL     xl XLABEL
+ylabel YLABEL     yl YLABEL
+marker MARKER     m MARKER
+sleep SLEEP       s SLEEP
+
