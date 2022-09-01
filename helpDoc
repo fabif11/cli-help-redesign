@@ -1,0 +1,33 @@
+Usage:
+	program + command + option + argument
+	program + n*argument
+	program + optional argument
+	…
+
+Options:
+->SYSTEM
+    -h --help   
+    -clr {True, False}, --clear_terminal {True, False} 
+    -p PATH, --path PATH    
+->TEXT
+    -t TITLE, --title TITLE    
+    -xl XLABEL, --xlabel XLABEL    
+    -yl YLABEL, --ylabel YLABEL    
+->LOOK
+    -c COLOR, --color COLOR     
+    -m MARKER, --marker MARKER      
+->STATUS
+    -s SLEEP, --sleep SLEEP
+
+
+Options:
+Beginner          Expert
+--                -
+help              h
+path PATH         p PATH
+title TITLE       t TITLE
+xlabel XLABEL     xl XLABEL
+ylabel YLABEL     yl YLABEL
+marker MARKER     m MARKER
+sleep SLEEP       s SLEEP
+
