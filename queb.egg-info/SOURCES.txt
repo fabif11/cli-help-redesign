@@ -1,7 +1,0 @@
-setup.py
-queb.egg-info/PKG-INFO
-queb.egg-info/SOURCES.txt
-queb.egg-info/dependency_links.txt
-queb.egg-info/entry_points.txt
-queb.egg-info/requires.txt
-queb.egg-info/top_level.txt
