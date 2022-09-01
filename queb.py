@@ -12,22 +12,45 @@ def queb(n, helplist, helpgroup):
     if helplist:
         print('''
         Usage:
-            program plot [options] <argument>
+        program + command + option + argument
+        program + n*argument
+        program + optional argument
+        …
 
         Options:
         SYSTEM
             -h --help   
+            -clr {True, False}, --clear_terminal {True, False}
+            -f FILE, --file FILE
             -p PATH, --path PATH    
-        TEXT
+        SPACE
+            -col COLUMNS [COLUMNS ...], --columns COLUMNS [COLUMNS ...]
+            -d DELIMITER, --delimiter DELIMITER
+        LOOK
+            -m MARKER, --marker MARKER 
             -t TITLE, --title TITLE    
             -xl XLABEL, --xlabel XLABEL    
             -yl YLABEL, --ylabel YLABEL    
-        LOOK
-            -c COLOR, --color COLOR     
-            -m MARKER, --marker MARKER      
+            -c COLOR, --color COLOR
+            -g {True,False}, --grid {True,False}
         STATUS
             -s SLEEP, --sleep SLEEP
             '''
         )
     if helpgroup:
-        print("ciao")
+        print('''
+        Options:
+        -h --help   
+        -clr {True, False}, --clear_terminal {True, False}
+        -f FILE, --file FILE
+        -p PATH, --path PATH    
+        -col COLUMNS [COLUMNS ...], --columns COLUMNS [COLUMNS ...]
+        -d DELIMITER, --delimiter DELIMITER
+        -m MARKER, --marker MARKER 
+        -t TITLE, --title TITLE    
+        -xl XLABEL, --xlabel XLABEL    
+        -yl YLABEL, --ylabel YLABEL    
+        -c COLOR, --color COLOR
+        -g {True,False}, --grid {True,False}
+        -s SLEEP, --sleep SLEEP
+    ''')
