@@ -2,8 +2,8 @@ from pydoc import cli
 import click
 
 @click.command()
-@click.option("--helplist", "-hl", is_flag=True, show_default=True, default=False, help="Per visualizzare i comandi in lista")
-@click.option("--helpgroup", "-hg", is_flag=True, show_default=True, default=False, help="Per visualizzare i comandi in gruppi")
+@click.option("--helplist", "-hl", is_flag=True, show_default=True, default=False, help="Show commands help as a list")
+@click.option("--helpgroup", "-hg", is_flag=True, show_default=True, default=False, help="Show commands help as a group")
 def queb(helplist, helpgroup): 
 
     if helpgroup:
