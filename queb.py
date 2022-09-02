@@ -2,14 +2,11 @@ from pydoc import cli
 import click
 
 @click.command()
-@click.option('--n', default=1, show_default=True)
-@click.option("--helplist", is_flag=True, show_default=True, default=False, help="Greet the world.")
-@click.option("--helpgroup", is_flag=True, show_default=True, default=True, help="Add a thematic break")
-#@click.option('--helplist', '-hl', is_flag=True)
-#@click.option('--helpgroup', '-hg', is_flag=True)
-def queb(n, helplist, helpgroup): 
+@click.option("--helplist", "-hl", is_flag=True, show_default=True, default=False, help="Per visualizzare i comandi in lista")
+@click.option("--helpgroup", "-hg", is_flag=True, show_default=True, default=False, help="Per visualizzare i comandi in gruppi")
+def queb(helplist, helpgroup): 
 
-    if helplist:
+    if helpgroup:
         print('''
         Usage:
         program + command + option + argument
@@ -37,8 +34,14 @@ def queb(n, helplist, helpgroup):
             -s SLEEP, --sleep SLEEP
             '''
         )
-    if helpgroup:
+    if helplist:
         print('''
+        Usage:
+        program + command + option + argument
+        program + n*argument
+        program + optional argument
+        …
+
         Options:
         -h --help   
         -clr {True, False}, --clear_terminal {True, False}

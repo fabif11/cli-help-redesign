@@ -1,3 +1,4 @@
+README.md
 setup.py
 queb.egg-info/PKG-INFO
 queb.egg-info/SOURCES.txt
